@@ -4,11 +4,48 @@
 <head>
     <meta charset="UTF-8">
     <title>Summary: Latitude vs. X</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   
+   <style>
+       h1 {
+           color: magenta;
+       }
+   </style>
+
 </head>
 
 
 <body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   
+
+
+
+    <nav class="navbar navbar-light bg-light">
+        <span class="navbar-brand mb-0 h1">Latitude</span>
+    
+    
+        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+            <div class="btn-group" role="group">
+              <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Plots
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="http://127.0.0.1:5500/max_temp.html">Latitude vs Max Temperature</a>
+                <a class="dropdown-item" href="http://127.0.0.1:5500/humidity.html">Latitiude vs Humidity</a>
+                <a class="dropdown-item" href="http://127.0.0.1:5500/cloud.html">Latitude vs Cloudiness</a>
+                <a class="dropdown-item" href="http://127.0.0.1:5500/wind_speed.html">Latitude vs Wind Speed</a>
+              
+              </div>
+            <a class="btn btn-primary" href="http://127.0.0.1:5500/comparisons.html" role="button">Comparison</button></a>
+            <a class="btn btn-primary" href="http://127.0.0.1:5500/city_data.html" role="button">Data</button></a>
+          </div>
+          </div>
+    </nav>
+
+
     <h1>Summary: Latitude vs. X</h1>
     <p>The aim of this project was to examine various weather factors in relation to city distance from the equator, as measured by latitude.
         Factors examined included city max temperature, humidity, cloudiness, and wind speed. Data was gathered using OpenWeatherMap API.
@@ -18,10 +55,14 @@
       
 <!-- NEED TO STORE THIS IN A SIDEBAR -->
     <h1>Visualizations</h1>
-    <a href="http://127.0.0.1:5500/max_temp.html"><img id="lat_max_temp" src="Resources/assets/images/Fig1.png" alt="Graph of city latitude vs max temperature."/></a>
-    <a href="http://127.0.0.1:5500/humidity.html"><img id="lat_humid" src="Resources/assets/images/Fig2.png" alt="Graph of city latitude vs humidity."/></a>
-    <a href="http://127.0.0.1:5500/cloud.html"><img id="lat_cloud" src="Resources/assets/images/Fig3.png" alt="Graph of city latitude vs cloudiness."/></a>
-    <a href="http://127.0.0.1:5500/wind_speed.html"><img id="lat_wind" src="Resources/assets/images/Fig4.png" alt="Graph of city latitude vs wind speed."/></a>
+    <a href="http://127.0.0.1:5500/max_temp.html">
+        <img id="lat_max_temp" src="Resources/assets/images/Fig1.png" alt="Graph of city latitude vs max temperature."/></a>
+    <a href="http://127.0.0.1:5500/humidity.html">
+        <img id="lat_humid" src="Resources/assets/images/Fig2.png" alt="Graph of city latitude vs humidity."/></a>
+    <a href="http://127.0.0.1:5500/cloud.html">
+        <img id="lat_cloud" src="Resources/assets/images/Fig3.png" alt="Graph of city latitude vs cloudiness."/></a>
+    <a href="http://127.0.0.1:5500/wind_speed.html">
+        <img id="lat_wind" src="Resources/assets/images/Fig4.png" alt="Graph of city latitude vs wind speed."/></a>
 </body>
 
 
