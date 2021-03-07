@@ -1,1 +1,4 @@
 # Web-Design-Challenge
+THE WEBSITE CAN BE FOUND AT: https://hsharma263.github.io/ 
+
+This challenge is focused on HTML and CSS/Bootstrap. The plots and data from the previous Weather challenge are presented here, in website form. The index.html file contains the code for the website landing page. From there, you can navigate to in-depth analyses of each plot by clicking on the visualization, viewing a tabular format of the data, in addition to comparing the different plots. Bootstrap was used to create a grid system to view the information on the website, in addition to creating the Navigation bar. CSS was used for color and some other image formatting. The code is found in the external .css files. 
